@@ -1,0 +1,15 @@
+<section class="container p-5 d-flex justify-content-center align-items-center">
+  <section class=" w-75">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input [(ngModel)]="studentEmail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="InputStudentName" class="form-label">Student name</label>
+      <input [(ngModel)]="studentName" type="text" class="form-control" id="InputStudentName">
+    </div>
+    <button (click)="addStudent()" type="submit" class="btn btn-outline-primary">Submit</button>
+  </section>
+
+</section>

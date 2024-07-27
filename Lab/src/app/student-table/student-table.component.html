@@ -1,0 +1,19 @@
+<section class="container p-5">
+  <table  cellPadding="10px" class="w-75 m-auto table table-hover table-striped p-5 text-center">
+    <tr class="bg-dark text-white">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+    @for (student of students; track $index) {
+      <tr>
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+        <td><button class="btn btn-outline-danger" (click)="deleteElement($index)">Remove</button></td>
+      </tr>
+    }
+  </table>
+
+</section>
